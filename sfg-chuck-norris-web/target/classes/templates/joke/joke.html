@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokerino</title>
+</head>
+<body background="https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/09/25/Recortada/img_psola_20190925-120245_imagenes_lv_terceros_walker_texas_ranger-k26D-U47630064699MK-992x558@LaVanguardia-Web.jpg">
+    <h1 th:text="'Welcome to Chuck Norris Joke/Quotes'">Welcome to Chuck Norris Joke/Quotes</h1><br>
+    <br>
+    <span style="color:gainsboro" th:text="${joke.getQuote()}"></span>
+    <br>
+    <span>
+        Please, hit the button to get a new phrase
+    </span>
+
+
+<button th:text="'New Quote!'" onClick="window.location.reload();">>New Quote!</button>
+</body>
+</html>
